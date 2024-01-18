@@ -17,7 +17,6 @@ import java.util.Optional;
 public interface CustomerRepo extends CrudRepository<Customer, Long> {
 
     // РАЗНЫЕ ВИДЫ Find (АНАЛОГ Get) - ЭТО БУКВА R из cRud (https://ru.wikipedia.org/wiki/CRUD)
-
     Customer findByLoginIgnoreCase(String login);
     Optional<Customer> findById(Long id);
 
