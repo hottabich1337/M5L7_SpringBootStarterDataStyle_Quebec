@@ -25,7 +25,7 @@ public class AppConfig {
     // ПОЭТОМУ САМ СПРАВИТСЯ С НАСТРОЙКОЙ ПУЛА КОННЕКШЕНОВ И РОЖДЕНИЕМ DataSource
     // ИСПОЛЬЗУЯ ЛИЩЬ ДАННЫЕ НАСТРОЕК ИЗ ФАЙЛА application.properties
 
-    @Bean
+  /*  @Bean
     Driver driver(@Value("${spring.datasource.driver-class-name}") String driverClassName) throws ClassNotFoundException  {
         try {
             return (Driver) Class.forName(driverClassName)
@@ -52,5 +52,5 @@ public class AppConfig {
         config.setPoolName("myPool");
         return new HikariDataSource( config );
     }
-
+*/
 }
